@@ -59,6 +59,8 @@ export default {
 .icons >>> .swiper-container
   height 0;
   padding-bottom 56%;
+.icons
+  margin-top .2rem
 .icon
   position relative
   overflow hidden
