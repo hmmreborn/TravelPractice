@@ -5,7 +5,7 @@
        <div class="banner-info">
          <div class="banner-title">上海迪士尼乐园</div>
          <div class="banner-num">
-           <span class="iconfont banner-icon">&#xe674;</span>&nbsp;69
+           <span class="iconfont banner-icon">&#xe674;</span>&nbsp;2
          </div>
        </div>
      </div>
