@@ -9,12 +9,18 @@
          </div>
        </div>
      </div>
-    <common-gallery :imgs="imgs" v-show="showGallery" @close="handleGalleryClose"></common-gallery>
+    <fade-animation>
+    <common-gallery
+      :imgs="galleryImgs"
+      v-show="showGallery"
+      @close="handleGalleryClose"></common-gallery>
+    </fade-animation>
   </div>
 </template>
 
 <script>
 import CommonGallery from 'common/gallery/Gallery'
+import FadeAnimation from 'common/fade/Fade'
 export default {
   name: 'DetailBanner',
   props: {
@@ -23,12 +29,12 @@ export default {
     galleryImgs: Array
   },
   components: {
-    CommonGallery
+    CommonGallery,
+    FadeAnimation
   },
   data () {
     return {
-      showGallery: false,
-      imgs: ['http://img1.qunarzz.com/sight/p0/1607/7c/7cda8b6782dabd80b4.img.jpg_r_800x800_d6a63068.jpg', 'http://img1.qunarzz.com/sight/p0/1811/d5/d5153b5e337c0644a3.water.jpg_r_800x800_5785f05e.jpg']
+      showGallery: false
     }
   },
   methods: {
